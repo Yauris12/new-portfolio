@@ -1,0 +1,33 @@
+.networks {
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  width: 4rem;
+}
+.networks ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.networks li {
+  cursor: pointer;
+}
+.networks svg:hover {
+  color: #e1dee3;
+}
+
+.n-line {
+  height: 20rem;
+  background: rebeccapurple;
+  width: 0.5rem;
+  margin: 0 auto;
+  background-color: #e4007c;
+}
+
+@media screen and (max-width: 1039px) {
+  .networks {
+    display: none;
+  }
+}

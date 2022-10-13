@@ -1,0 +1,170 @@
+.projects-sec {
+  width: 85%;
+  overflow-y: hidden;
+  padding-top: 100px;
+}
+
+.grid-projects {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card-project {
+  position: relative;
+  width: 360px;
+  height: 250px;
+}
+@media screen and (min-width: 1120px) {
+  #projects {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .card-project {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1126px) {
+  .card-project {
+    max-width: 27rem;
+    height: 230px;
+  }
+  #projects {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 846px) {
+  .grid-projects {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card-project {
+    position: relative;
+    width: 400px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .card-project {
+    position: relative;
+    width: 380px;
+    height: 240px;
+  }
+  .img-project {
+    object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .grid-projects {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .card-project {
+    position: relative;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .card-project {
+    position: relative;
+    width: 30rem;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card-project {
+    position: relative;
+    width: 25rem;
+    height: 210px;
+    margin: 0 auto;
+  }
+}
+
+.face-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.front {
+  transform: perspective(600) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.img-project {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: content;
+  object-position: center;
+}
+.front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.back h3 {
+  margin: 0;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.back ul {
+  display: flex;
+  margin: 0;
+  padding: 2px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.back .list-tecnologies {
+  list-style: circle;
+}
+
+.card-project:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.card-project:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.code-links {
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+.code-links p a {
+  color: white;
+  background-color: #e4007c;
+  padding: 5px;
+  border-radius: 5px;
+}

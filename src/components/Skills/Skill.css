@@ -1,0 +1,132 @@
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  margin-top: 3rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.grid-card img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  height: 12rem;
+}
+
+.grid-card h3 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1250px) {
+  .grid-card {
+    display: grid;
+    grid-template-columns: repeat(4, 185px);
+    margin-top: 3rem;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .grid-card img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+  #skills {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .grid-card {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  .grid-card img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 765px) {
+  .grid-card {
+    grid-template-columns: repeat(3, 170px);
+  }
+
+  .grid-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .grid-card {
+    grid-template-columns: repeat(3, 160px);
+  }
+
+  .grid-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-card {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .grid-card img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+  }
+  .card {
+    height: 13.5rem;
+  }
+}
+@media screen and (max-width: 458px) {
+  .grid-card {
+    grid-template-columns: repeat(2, 180px);
+  }
+  .grid-card img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+  .card {
+    height: 12.5rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .grid-card {
+    grid-template-columns: repeat(2, 160px);
+    gap: 1rem;
+  }
+  .grid-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+  }
+  .card {
+    height: 11.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grid-card {
+    grid-template-columns: repeat(2, 145px);
+  }
+  .grid-card img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+  }
+  .card {
+    height: 10.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+.scrollToTop {
+  background-color: #e4007c;
+  position: fixed;
+  height: 6rem;
+  width: 6rem;
+  bottom: 40px;
+  right: 40px;
+  z-index: 200;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.scrollToTop:hover {
+  background-color: white;
+}
+
+svg {
+  color: white;
+  font-size: 3rem;
+}
+.scrollToTop:hover svg {
+  color: #e4007c;
+}
+@media screen and (max-width: 800px) {
+  .scrollToTop {
+    bottom: 20px;
+    right: 20px;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .scrollToTop {
+    bottom: 15px;
+    right: 15px;
+    height: 4rem;
+    width: 4rem;
+  }
+}

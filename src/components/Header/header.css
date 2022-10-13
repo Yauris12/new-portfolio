@@ -1,0 +1,54 @@
+nav {
+  height: 5.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 199;
+  background: #011627;
+  font-size: 2rem;
+}
+.logo-por {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav_wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link {
+  display: flex;
+  gap: 1.2rem;
+  color: beige;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.nav-link li:hover {
+  color: #e4007c;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-link li {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .nav-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 556px) {
+  .nav-toggle {
+    display: none;
+  }
+}
